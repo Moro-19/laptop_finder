@@ -11,7 +11,7 @@
     "batteryHours": 12,
     "weightKg": 1.2,
     "screenInches": 13.3,
-    "image": "assets/aerobook-s13.jpg",
+    "image": "assets/aerobook-s13.svg",
     "description": "A light, slim ultrabook built for students who carry their laptop everywhere. Great battery life for all-day classes."
   },
   {
@@ -26,7 +26,7 @@
     "batteryHours": 11,
     "weightKg": 1.3,
     "screenInches": 14,
-    "image": "assets/aerobook-pro14.jpg",
+    "image": "assets/aerobook-pro14.svg",
     "description": "A step up from the S13 with more power and storage, still thin enough for a backpack."
   },
   {
@@ -41,7 +41,7 @@
     "batteryHours": 6,
     "weightKg": 2.3,
     "screenInches": 15.6,
-    "image": "assets/titanforce-g15.jpg",
+    "image": "assets/titanforce-g15.svg",
     "description": "A gaming laptop with a dedicated GPU, built for heavier workloads and gaming sessions between classes."
   },
   {
@@ -56,7 +56,7 @@
     "batteryHours": 5,
     "weightKg": 2.7,
     "screenInches": 17.3,
-    "image": "assets/titanforce-g17.jpg",
+    "image": "assets/titanforce-g17.svg",
     "description": "A large, powerful gaming rig with top-tier specs for demanding games and rendering tasks."
   },
   {
@@ -71,7 +71,7 @@
     "batteryHours": 10,
     "weightKg": 1.4,
     "screenInches": 13.5,
-    "image": "assets/flexnote-x360.jpg",
+    "image": "assets/flexnote-x360.svg",
     "description": "A convertible 2-in-1 laptop with a touchscreen that folds flat for note-taking or sketching."
   },
   {
@@ -86,7 +86,7 @@
     "batteryHours": 9,
     "weightKg": 1.5,
     "screenInches": 14,
-    "image": "assets/flexnote-duo14.jpg",
+    "image": "assets/flexnote-duo14.svg",
     "description": "A versatile 2-in-1 with a stylus included, ideal for students who annotate PDFs and slides."
   },
   {
@@ -101,7 +101,7 @@
     "batteryHours": 7,
     "weightKg": 2.1,
     "screenInches": 16,
-    "image": "assets/studiomax-16.jpg",
+    "image": "assets/studiomax-16.svg",
     "description": "A color-accurate display and strong GPU make this ideal for design, video editing, and 3D work."
   },
   {
@@ -116,7 +116,7 @@
     "batteryHours": 8,
     "weightKg": 1.6,
     "screenInches": 14,
-    "image": "assets/studiomax-14.jpg",
+    "image": "assets/studiomax-14.svg",
     "description": "A smaller creator laptop that balances portability with enough power for photo and video editing."
   },
   {
@@ -131,7 +131,7 @@
     "batteryHours": 9,
     "weightKg": 1.5,
     "screenInches": 14,
-    "image": "assets/valuepro-b14.jpg",
+    "image": "assets/valuepro-b14.svg",
     "description": "An affordable option for note-taking, browsing, and basic coursework on a tight budget."
   },
   {
@@ -146,7 +146,7 @@
     "batteryHours": 8,
     "weightKg": 1.6,
     "screenInches": 15.6,
-    "image": "assets/valuepro-b15.jpg",
+    "image": "assets/valuepro-b15.svg",
     "description": "A bigger-screen budget laptop with more storage, suited for everyday student tasks."
   },
   {
@@ -161,7 +161,7 @@
     "batteryHours": 13,
     "weightKg": 1.0,
     "screenInches": 12,
-    "image": "assets/aerobook-air12.jpg",
+    "image": "assets/aerobook-air12.svg",
     "description": "The lightest laptop in the lineup, built purely for portability and long battery life."
   },
   {
@@ -176,7 +176,7 @@
     "batteryHours": 6,
     "weightKg": 2.2,
     "screenInches": 15.6,
-    "image": "assets/titanforce-g15lite.jpg",
+    "image": "assets/titanforce-g15lite.svg",
     "description": "A toned-down gaming laptop with solid performance at a friendlier price point."
   },
   {
@@ -191,7 +191,7 @@
     "batteryHours": 11,
     "weightKg": 1.1,
     "screenInches": 11.6,
-    "image": "assets/flexnote-mini11.jpg",
+    "image": "assets/flexnote-mini11.svg",
     "description": "A compact 2-in-1 that's easy to carry in a small bag, with tablet mode for reading."
   },
   {
@@ -206,7 +206,7 @@
     "batteryHours": 6,
     "weightKg": 2.4,
     "screenInches": 17,
-    "image": "assets/studiomax-17.jpg",
+    "image": "assets/studiomax-17.svg",
     "description": "A top-of-the-line creator laptop with maximum screen real estate and raw power."
   },
   {
@@ -221,7 +221,7 @@
     "batteryHours": 7,
     "weightKg": 1.4,
     "screenInches": 13.3,
-    "image": "assets/valuepro-b13se.jpg",
+    "image": "assets/valuepro-b13se.svg",
     "description": "An entry-level laptop for basic browsing and typing when budget is the top priority."
   },
   {
@@ -236,7 +236,7 @@
     "batteryHours": 10,
     "weightKg": 1.7,
     "screenInches": 16,
-    "image": "assets/aerobook-pro16.jpg",
+    "image": "assets/aerobook-pro16.svg",
     "description": "A larger ultrabook with a roomy screen, good for multitasking between lecture notes and research."
   },
   {
@@ -251,7 +251,7 @@
     "batteryHours": 5,
     "weightKg": 2.5,
     "screenInches": 16,
-    "image": "assets/titanforce-g16.jpg",
+    "image": "assets/titanforce-g16.svg",
     "description": "High refresh rate screen and strong GPU for both gaming and heavier student workloads."
   },
   {
@@ -266,7 +266,7 @@
     "batteryHours": 10,
     "weightKg": 1.3,
     "screenInches": 13,
-    "image": "assets/flexnote-duo13.jpg",
+    "image": "assets/flexnote-duo13.svg",
     "description": "A balanced 2-in-1 with solid specs for students who switch between typing and touchscreen notes."
   },
   {
@@ -281,7 +281,7 @@
     "batteryHours": 8,
     "weightKg": 1.9,
     "screenInches": 15.6,
-    "image": "assets/studiomax-15.jpg",
+    "image": "assets/studiomax-15.svg",
     "description": "A balanced creator laptop good for design students who also need decent battery life."
   },
   {
@@ -296,7 +296,7 @@
     "batteryHours": 9,
     "weightKg": 1.7,
     "screenInches": 15.6,
-    "image": "assets/valuepro-b16plus.jpg",
+    "image": "assets/valuepro-b16plus.svg",
     "description": "A budget laptop with a bigger screen and more storage, good value for everyday coursework."
   },
   {
@@ -311,7 +311,7 @@
     "batteryHours": 12,
     "weightKg": 1.2,
     "screenInches": 13.3,
-    "image": "assets/aerobook-s13plus.jpg",
+    "image": "assets/aerobook-s13plus.svg",
     "description": "An upgraded version of the S13 with more RAM, still light and long-lasting."
   },
   {
@@ -326,7 +326,7 @@
     "batteryHours": 7,
     "weightKg": 1.8,
     "screenInches": 14,
-    "image": "assets/titanforce-g14.jpg",
+    "image": "assets/titanforce-g14.svg",
     "description": "A compact gaming laptop that's easier to carry to campus without sacrificing much performance."
   }
 ]

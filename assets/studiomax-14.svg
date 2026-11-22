@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#ec4899"/>
+  <rect x="40" y="90" width="320" height="140" rx="10" fill="#1f2937" opacity="0.15"/>
+  <rect x="60" y="100" width="280" height="110" rx="6" fill="#ffffff" opacity="0.9"/>
+  <text x="200" y="160" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#1f2937" text-anchor="middle">StudioMax 14 Creator Lite</text>
+  <text x="200" y="265" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" text-anchor="middle" opacity="0.85">Laptop Finder</text>
+</svg>
