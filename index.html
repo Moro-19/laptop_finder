@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<head>
+  <title>Student Laptop Finder</title>
+  <link rel="stylesheet" href="dist/output.css" />
+</head>
+<body data-theme="battery-saver" class="min-h-screen transition-colors duration-300">
+
+  <header class="flex justify-between items-center p-4 shadow-md">
+    <h1 class="font-bold text-xl">Student Laptop Finder</h1>
+
+    <button id="nav-toggle" class="sm:hidden text-2xl">☰</button>
+
+    <nav id="main-nav" class="hidden sm:flex gap-4 items-center">
+      <a href="index.html" class="font-semibold">Home</a>
+      <a href="laptops.html">Laptops</a>
+      <a href="favorites.html">Favorites</a>
+      <a href="compare.html">Compare</a>
+      <button id="theme-toggle" class="btn-action">Switch Theme</button>
+    </nav>
+  </header>
+
+  <nav id="mobile-nav" class="hidden flex-col gap-2 p-4 sm:hidden">
+    <a href="index.html" class="font-semibold">Home</a>
+    <a href="laptops.html">Laptops</a>
+    <a href="favorites.html">Favorites</a>
+    <a href="compare.html">Compare</a>
+    <button id="theme-toggle-mobile" class="btn-action w-fit">Switch Theme</button>
+  </nav>
+
+  <main class="p-6 max-w-5xl mx-auto">
+    <section class="text-center py-10">
+      <h2 class="text-3xl font-bold mb-2">Find the right laptop for you</h2>
+      <p class="mb-6">Browse, compare, and save your favorite laptops as a student.</p>
+      <a href="laptops.html" class="btn-action">Browse Laptops</a>
+    </section>
+
+    <section class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-10">
+      <div class="laptop-card p-6 text-center">
+        <p class="text-2xl font-bold" id="stat-count">–</p>
+        <p class="text-sm">Laptops Available</p>
+      </div>
+      <div class="laptop-card p-6 text-center">
+        <p class="text-2xl font-bold" id="stat-min-price">–</p>
+        <p class="text-sm">Lowest Price</p>
+      </div>
+      <div class="laptop-card p-6 text-center">
+        <p class="text-2xl font-bold" id="stat-favorites">–</p>
+        <p class="text-sm">Saved Favorites</p>
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="src/js/index.js"></script>
+</body>
+</html>

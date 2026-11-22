@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<head>
+  <title>Favorites - Student Laptop Finder</title>
+  <link rel="stylesheet" href="dist/output.css" />
+</head>
+<body data-theme="battery-saver" class="min-h-screen transition-colors duration-300">
+
+  <header class="flex justify-between items-center p-4 shadow-md">
+    <h1 class="font-bold text-xl"> Student Laptop Finder</h1>
+    <button id="nav-toggle" class="sm:hidden text-2xl">☰</button>
+    <nav id="main-nav" class="hidden sm:flex gap-4 items-center">
+      <a href="index.html">Home</a>
+      <a href="laptops.html">Laptops</a>
+      <a href="favorites.html" class="font-semibold">Favorites</a>
+      <a href="compare.html">Compare</a>
+      <button id="theme-toggle" class="btn-action">Switch Theme</button>
+    </nav>
+  </header>
+
+  <nav id="mobile-nav" class="hidden flex-col gap-2 p-4 sm:hidden">
+    <a href="index.html">Home</a>
+    <a href="laptops.html">Laptops</a>
+    <a href="favorites.html" class="font-semibold">Favorites</a>
+    <a href="compare.html">Compare</a>
+    <button id="theme-toggle-mobile" class="btn-action w-fit">Switch Theme</button>
+  </nav>
+
+  <main class="p-6 max-w-6xl mx-auto">
+    <div class="flex justify-between items-center mb-4">
+      <h2 class="text-2xl font-bold">Your Favorites</h2>
+      <button id="clear-favorites-btn" class="btn-action">Clear All</button>
+    </div>
+
+    <section class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
+      <div class="laptop-card p-4 text-center">
+        <p class="text-xl font-bold" id="stat-total-count">0</p>
+        <p class="text-sm">Saved Laptops</p>
+      </div>
+      <div class="laptop-card p-4 text-center">
+        <p class="text-xl font-bold" id="stat-total-price">$0</p>
+        <p class="text-sm">Total Price</p>
+      </div>
+      <div class="laptop-card p-4 text-center">
+        <p class="text-xl font-bold" id="stat-avg-price">$0</p>
+        <p class="text-sm">Average Price</p>
+      </div>
+    </section>
+
+    <section id="favorites-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></section>
+
+    <p id="empty-message" class="hidden text-center text-lg mt-10">You haven't saved any favorites yet.</p>
+    <p id="error-message" class="hidden text-center text-lg mt-10 text-red-600"></p>
+  </main>
+
+  <script type="module" src="src/js/favorites.js"></script>
+</body>
+</html>

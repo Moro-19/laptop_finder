@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+  <title>Compare - Student Laptop Finder</title>
+  <link rel="stylesheet" href="dist/output.css" />
+</head>
+<body data-theme="battery-saver" class="min-h-screen transition-colors duration-300">
+
+  <header class="flex justify-between items-center p-4 shadow-md">
+    <h1 class="font-bold text-xl"> Student Laptop Finder</h1>
+    <button id="nav-toggle" class="sm:hidden text-2xl">☰</button>
+    <nav id="main-nav" class="hidden sm:flex gap-4 items-center">
+      <a href="index.html">Home</a>
+      <a href="laptops.html">Laptops</a>
+      <a href="favorites.html">Favorites</a>
+      <a href="compare.html" class="font-semibold">Compare</a>
+      <button id="theme-toggle" class="btn-action">Switch Theme</button>
+    </nav>
+  </header>
+
+  <nav id="mobile-nav" class="hidden flex-col gap-2 p-4 sm:hidden">
+    <a href="index.html">Home</a>
+    <a href="laptops.html">Laptops</a>
+    <a href="favorites.html">Favorites</a>
+    <a href="compare.html" class="font-semibold">Compare</a>
+    <button id="theme-toggle-mobile" class="btn-action w-fit">Switch Theme</button>
+  </nav>
+
+  <main class="p-6 max-w-6xl mx-auto">
+    <h2 class="text-2xl font-bold mb-2">Compare Laptops</h2>
+    <p class="text-sm mb-4">Pick 2 to 4 laptops from your favorites to compare side by side.</p>
+
+    <p id="select-message" class="text-sm mb-4 text-red-600 hidden"></p>
+
+    <section id="picker-container" class="flex flex-wrap gap-2 mb-6"></section>
+
+    <p id="no-favorites-message" class="hidden text-center text-lg mt-10">
+      You need favorites first. Go to the Laptops page and add some.
+    </p>
+
+    <div id="compare-table-wrapper" class="overflow-x-auto"></div>
+  </main>
+
+  <script type="module" src="src/js/compare.js"></script>
+</body>
+</html>

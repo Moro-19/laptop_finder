@@ -1,0 +1,51 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/forms";
+
+@theme {
+  --color-perf-bg: #0f0f0f;
+  --color-perf-surface: #1c1c1c;
+  --color-perf-text: #f5f5f5;
+  --color-perf-accent: #ff7a1a;
+
+  --color-battery-bg: #f3fdf5;
+  --color-battery-surface: #ffffff;
+  --color-battery-text: #10291a;
+  --color-battery-accent: #2fa84f;
+}
+
+@layer components {
+ .laptop-card {
+  @apply bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:shadow-xl hover:-translate-y-1;
+}
+  .btn-action {
+    @apply px-4 py-2 rounded-md font-medium text-white bg-battery-accent transition-colors hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-offset-2;
+  }
+}
+
+body[data-theme="performance"] {
+  background-color: var(--color-perf-bg);
+  color: var(--color-perf-text);
+}
+
+body[data-theme="performance"] .laptop-card {
+  background-color: var(--color-perf-surface);
+  color: var(--color-perf-text);
+}
+
+body[data-theme="performance"] .btn-action {
+  background-color: var(--color-perf-accent);
+}
+
+body[data-theme="battery-saver"] {
+  background-color: var(--color-battery-bg);
+  color: var(--color-battery-text);
+}
+
+body[data-theme="battery-saver"] .laptop-card {
+  background-color: var(--color-battery-surface);
+  color: var(--color-battery-text);
+}
+
+body[data-theme="battery-saver"] .btn-action {
+  background-color: var(--color-battery-accent);
+}
