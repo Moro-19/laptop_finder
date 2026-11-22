@@ -1,5 +1,5 @@
 import { fetchLaptops, getLaptopById } from "./api.js";
-import { getTheme, setTheme, isFavorite, toggleFavorite } from "./storage.js";
+import { getTheme, setTheme, isFavorite, toggleFavorite, addFavorite, addPendingCompare } from "./storage.js";
 
 const detailsContainer = document.getElementById("details-container");
 const notFoundMessage = document.getElementById("not-found-message");
@@ -83,12 +83,10 @@ function renderDetails(laptop) {
 
   const compareBtn = document.getElementById("compare-btn");
   compareBtn.addEventListener("click", () => {
-    const compareIds = JSON.parse(localStorage.getItem("laptopFinderCompare") || "[]");
-    if (!compareIds.includes(laptop.id)) {
-      compareIds.push(laptop.id);
-      localStorage.setItem("laptopFinderCompare", JSON.stringify(compareIds));
-    }
-    compareBtn.textContent = "✓ Added to Compare";
+    addFavorite(laptop.id);
+    addPendingCompare(laptop.id);
+    favoriteBtn.innerHTML = "❤️ Remove Favorite";
+    compareBtn.textContent = "✓ Ready on Compare page";
   });
 }
 

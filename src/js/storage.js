@@ -1,5 +1,6 @@
 const FAVORITES_KEY = "laptopFinderFavorites";
 const THEME_KEY = "laptopFinderTheme";
+const PENDING_COMPARE_KEY = "laptopFinderPendingCompare";
 
 export function getFavorites() {
   const raw = localStorage.getItem(FAVORITES_KEY);
@@ -48,4 +49,21 @@ export function getTheme() {
 
 export function setTheme(theme) {
   localStorage.setItem(THEME_KEY, theme);
+}
+
+export function addPendingCompare(id) {
+  const raw = localStorage.getItem(PENDING_COMPARE_KEY);
+  const list = raw ? JSON.parse(raw) : [];
+  const numId = Number(id);
+  if (!list.includes(numId)) {
+    list.push(numId);
+    localStorage.setItem(PENDING_COMPARE_KEY, JSON.stringify(list));
+  }
+}
+
+export function getAndClearPendingCompare() {
+  const raw = localStorage.getItem(PENDING_COMPARE_KEY);
+  const list = raw ? JSON.parse(raw) : [];
+  localStorage.removeItem(PENDING_COMPARE_KEY);
+  return list;
 }

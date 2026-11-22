@@ -39,11 +39,18 @@ function setupMobileNav() {
   });
 }
 
+function parseNumberOrNull(rawValue) {
+  const trimmed = rawValue.trim();
+  if (trimmed === "") return null;
+  const num = Number(trimmed);
+  return Number.isNaN(num) ? null : num;
+}
+
 function getFilteredLaptops() {
   const searchTerm = searchInput.value.trim().toLowerCase();
   const category = categoryFilter.value;
-  const maxPrice = maxPriceFilter.value ? Number(maxPriceFilter.value) : null;
-  const minRam = minRamFilter.value ? Number(minRamFilter.value) : null;
+  const maxPrice = parseNumberOrNull(maxPriceFilter.value);
+  const minRam = parseNumberOrNull(minRamFilter.value);
 
   return allLaptops.filter((laptop) => {
     const matchesSearch =
@@ -103,6 +110,7 @@ function renderResults() {
 function setupFilterListeners() {
   [searchInput, categoryFilter, maxPriceFilter, minRamFilter, sortSelect].forEach((el) => {
     el.addEventListener("input", renderResults);
+    el.addEventListener("change", renderResults);
   });
 }
 

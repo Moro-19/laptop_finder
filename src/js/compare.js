@@ -1,5 +1,5 @@
 import { fetchLaptops } from "./api.js";
-import { getTheme, setTheme, getFavorites } from "./storage.js";
+import { getTheme, setTheme, getFavorites, getAndClearPendingCompare } from "./storage.js";
 
 let favoriteLaptops = [];
 let selectedIds = [];
@@ -147,6 +147,26 @@ function renderComparisonTable() {
   `;
 }
 
+function pickInitialSelection() {
+  const pending = getAndClearPendingCompare().filter((id) =>
+    favoriteLaptops.some((laptop) => laptop.id === id)
+  );
+
+  if (pending.length >= MIN_SELECTED) {
+    return pending.slice(0, MAX_SELECTED);
+  }
+
+  const favoriteIdsOrdered = favoriteLaptops.map((laptop) => laptop.id);
+  const combined = [...pending];
+
+  for (const id of favoriteIdsOrdered) {
+    if (combined.length >= MIN_SELECTED) break;
+    if (!combined.includes(id)) combined.push(id);
+  }
+
+  return combined.slice(0, MAX_SELECTED);
+}
+
 async function init() {
   try {
     const allLaptops = await fetchLaptops();
@@ -158,7 +178,7 @@ async function init() {
       return;
     }
 
-    selectedIds = favoriteLaptops.slice(0, MIN_SELECTED).map((l) => l.id);
+    selectedIds = pickInitialSelection();
 
     renderPicker();
     renderComparisonTable();
